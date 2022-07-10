@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <title>Bienvenido</title>
+</head>
+<body>
+    <div class="login-box">
+        <h2></h2>
+    <form class="form">
+        <div class="user-box">
+            <input type="text" name="nombre" id="nombre"/>
+            <label>Nombre</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="descripcion" id="descripcion"/>
+            <label for="">Descripción</label>
+        </div>
+        <div class="user-box">
+            <input type="date" name="fecha" id="fecha"/>
+            <label for="">Fecha</label>
+        </div>
+        <div class="user-box">
+            <input type="time" name="hora" id="hora" />
+            <label for="">Hora</label>
+        </div>
+        <div class="user-box">
+            <select name="editor" id="editor" name="zona" id="zona">
+                <option value="America/Lima">America/Lima</option>
+                <option value="America/Bogota">America/Bogota</option>
+                <option value="America/Brasilia">America/Brasil</option>
+                <option value="America/Quito">America/Quito</option>
+                
+            </select>
+            <!-- <label for="editors">Elige tu zona horaria:</label> -->
+        </div> 
+        <div class="user-box">
+            <input type="text" name="ubicacion" id="ubicacion"/>
+            <label for="">Ubicación</label>
+        </div>
+        <div class="user-box">
+            <input id="emailAddress" type="email" multiple name="email" id="email"/>
+            <label for="">Invitados</label>
+        </div> 
+
+        <div class="user-box">
+            <input type="number" name="frecuencia" id="frecuencia"/>
+            <label for="">Frecuencia de Recordatorios</label>
+        </div>
+        <div class="user-box">
+            <input type="checkbox" name="meet" id="meet"/>
+            <label for="">Google Meet</label>
+        </div>
+        <button class="create" id="create">Crear</button>
+    </form>
+    
+</div>
+</body>
+</html>
